@@ -59,9 +59,9 @@ hr {
 
 .woman-desktop {
   display: block;
-  margin-top: 100px;
+  margin-top: 85px;
   margin-left: -80px;
-  height: 60%;
+  height: 65%;
   width: 50%;
   padding: 0;
   z-index: 1;
@@ -107,6 +107,71 @@ hr {
 }
 
 @media screen and (max-width: 780px) {
+  main {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 48px 32px 48px 32px;
+    width: 75%;
+    border-radius: 22px;
+    box-shadow: 0 20px 21px hsl(263, 41%, 40%);
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 24px;
+    font-size: 30px;
+  }
+
+  hr {
+    border: 1px solid hsl(240, 5%, 91%);
+    margin: 24px 0 24px 0;
+  }
+
+  .pattern-desktop,
+  .box-desktop,
+  .woman-desktop {
+    display: none;
+  }
+
+  .text {
+    width: 100%;
+    margin: auto;
+  }
+
+  .woman-mobile {
+    display: flex;
+    padding-top: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -112px;
+    filter: drop-shadow(0 8mm hsl(260, 9%, 94%));
+  }
+
+  .question {
+    padding: 24px 0 16px 0;
+    text-align: left;
+    display: inline;
+    color: #1e1f36;
+    font-size: 14px;
+    line-height: 14.08px;
+  }
+  .question:hover {
+    color: #f47b56;
+    cursor: pointer;
+  }
+
+  .answer {
+    display: none;
+    margin: 16px 0 24px 0;
+    line-height: 18px;
+    color: #787887;
+  }
+
+  .drop-btn {
+    cursor: pointer;
+    float: right;
+  }
 }
 
 .attribution {
